@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from app.models import Item
+from models import Item
 
 # Создать запись
 async def create_item(db: AsyncSession, name: str, description: str, price: int, quantity: int):
